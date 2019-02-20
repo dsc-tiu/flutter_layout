@@ -53,11 +53,11 @@ class Identity extends StatelessWidget {
                // color: Colors.black,
                 padding: EdgeInsets.all(20.0),
                 height: 100.0,
-                width: 150.0,
+                width: 200.0,
                 child: ListView(
                   children: <Widget>[
-                    Text("client Name",style: TextStyle(fontSize: 20.0,fontWeight: FontWeight.bold),),
-                    Text("email Id",style: TextStyle(fontSize: 20.0,fontWeight: FontWeight.bold),)
+                    Text("client title",style: TextStyle(fontSize: 20.0,fontWeight: FontWeight.bold),),
+                    Text("client email Id",style: TextStyle(fontSize: 20.0,fontWeight: FontWeight.bold),)
                   ],
                 ),
               )
