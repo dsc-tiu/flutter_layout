@@ -19,7 +19,17 @@ class _LayoutAppState extends State<LayoutApp> {
       appBar: AppBar(
         title: Text("Layout Learning"),
       ),
-      drawer: Drawer(),
+      drawer: Drawer(
+        //todo
+      ),
+      body:Container(
+        height: 300.0,
+        child: Row(
+          children: <Widget>[
+            
+          ],
+        ),
+      ),
     );
   }
 }
