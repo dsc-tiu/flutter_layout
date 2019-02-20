@@ -23,10 +23,19 @@ class _LayoutAppState extends State<LayoutApp> {
         //todo
       ),
       body:Container(
-        height: 300.0,
+        height: 200.0,
         child: Row(
           children: <Widget>[
-            
+            Container(
+              height: 200.0,
+              width: 100.0,
+              child: Center(
+                child: Icon(
+                  Icons.account_circle,
+                  color: Colors.redAccent,
+                ),
+              ),
+            ),
           ],
         ),
       ),
