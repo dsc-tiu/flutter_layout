@@ -22,7 +22,20 @@ class _LayoutAppState extends State<LayoutApp> {
       drawer: Drawer(
         //todo
       ),
-      body:Container(
+      body: ListView(
+        children: <Widget>[
+          Identity(),
+          Identity()
+        ],
+      ),
+    );
+  }
+}
+
+class Identity extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Container(
           height: 100.0,
           //color: Colors.brown,
           child: Row(
@@ -43,14 +56,13 @@ class _LayoutAppState extends State<LayoutApp> {
                 width: 150.0,
                 child: ListView(
                   children: <Widget>[
-                    Text("Name",style: TextStyle(fontSize: 25.0),),
-                    Text("email Id",style: TextStyle(fontSize: 25.0),)
+                    Text("client Name",style: TextStyle(fontSize: 20.0,fontWeight: FontWeight.bold),),
+                    Text("email Id",style: TextStyle(fontSize: 20.0,fontWeight: FontWeight.bold),)
                   ],
                 ),
               )
             ],
           ),
-        ),
-    );
+        );
   }
 }
