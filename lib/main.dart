@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:layout_learning/drawyer.dart';
 
 void main() => runApp(
   MaterialApp(
@@ -21,50 +22,24 @@ class _LayoutAppState extends State<LayoutApp> {
         title: Text("Layout Learning"),
       ),
       drawer: Drawer(
-        //todo
-        child: ListView(
-          children: <Widget>[
-            UserAccountsDrawerHeader(
-              accountName: Text("DSC TIU"),
-              accountEmail: Text("dsctechnoindiauniversity@gmail.com"),
-              currentAccountPicture: CircleAvatar(
-                child: Text("D",style:TextStyle(fontSize:30.0,)),
-                backgroundColor: Colors.red,
-              ),
-              otherAccountsPictures: <Widget>[
-                CircleAvatar(
-                  child: Text("A",style: TextStyle(fontSize: 15.0),),
-                  backgroundColor: Colors.pink,
-                ),
-                CircleAvatar(
-                  child: Text("B",style: TextStyle(fontSize: 15.0),),
-                  backgroundColor: Colors.purple,
-                )
-              ],
-            ),
-            ListTile(
-              leading: Icon(Icons.account_circle,size: 40.0,color: Colors.red,),
-              title: Text("Primary"),
-            ),
-          ],
-        ),
+        child: Account(),
       ),
       body: ListView(
         children: <Widget>[
-          Identity(),
-          Identity(),
+         Client(),
+         Client(),
+         Client(),
         ],
       ),
     );
   }
 }
 
-class Identity extends StatelessWidget {
+class Client extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
           height: 100.0,
-          //color: Colors.brown,
           child: Row(
             children: <Widget>[
               Container(
@@ -78,13 +53,12 @@ class Identity extends StatelessWidget {
                   ),
               ),
               Container(
-               // color: Colors.black,
                 padding: EdgeInsets.fromLTRB(20.0, 20.0,20.0,20.0),
                 height: 100.0,
                 width: 200.0,
                 child: ListView(
                   children: <Widget>[
-                    Text("client title",style: TextStyle(fontSize: 20.0,fontWeight: FontWeight.bold),),
+                    Text("client name title",style: TextStyle(fontSize: 20.0,fontWeight: FontWeight.bold),),
                     Text("client email Id",style: TextStyle(fontSize: 20.0,fontWeight: FontWeight.bold),)
                   ],
                 ),
