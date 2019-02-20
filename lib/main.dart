@@ -16,7 +16,10 @@ class _LayoutAppState extends State<LayoutApp> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      
+      appBar: AppBar(
+        title: Text("Layout Learning"),
+      ),
+      drawer: Drawer(),
     );
   }
 }
