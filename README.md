@@ -1,4 +1,4 @@
 # flutter_layout
 clearing concept of layout on flutter
 
-<img src = "https://user-images.githubusercontent.com/30453784/53105020-5faacf00-3556-11e9-9ae4-11b729dc55bd.jpg" width = 350>
+<img src = "https://user-images.githubusercontent.com/30453784/53116132-e919cb80-356d-11e9-88a4-3a3d953d15f3.jpg" width = 300>  <img src = "https://user-images.githubusercontent.com/30453784/53116134-e9b26200-356d-11e9-9b96-6ec050d87bec.jpg" width = 300>
