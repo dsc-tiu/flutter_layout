@@ -58,8 +58,8 @@ class Client extends StatelessWidget {
                 width: 200.0,
                 child: ListView(
                   children: <Widget>[
-                    Text("client name title",style: TextStyle(fontSize: 20.0,fontWeight: FontWeight.bold),),
-                    Text("client email id",style: TextStyle(fontSize: 20.0,fontWeight: FontWeight.bold),)
+                    Text("client name Title",style: TextStyle(fontSize: 20.0,fontWeight: FontWeight.bold),),
+                    Text("client email Id",style: TextStyle(fontSize: 20.0,fontWeight: FontWeight.bold),)
                   ],
                 ),
               )
