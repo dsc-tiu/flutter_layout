@@ -55,7 +55,17 @@ class Account extends StatelessWidget {
               leading: Icon(Icons.account_circle,size: 40.0,color: Colors.red,),
               title: Text("Trash"),
             ),
-            Divider(height: 50.0,),
+            Divider(height: 5.0,),
+            Text("People Online"),
+            Divider(),
+            Row(
+              children: <Widget>[
+                CircleAvatar(
+                  child: Text("D"),
+                ),
+                Text("data")
+              ],
+            )
           ],
         );
   }
