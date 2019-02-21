@@ -53,15 +53,15 @@ class Account extends StatelessWidget {
             title: Text("Sent",style: TextStyle(color: Colors.black54),),
           ),
           ListTile(
-            leading: Icon(Icons.inbox,color: Colors.black54,),
+            leading: Icon(Icons.check_box_outline_blank,color: Colors.black54,),
             title: Text("Outbox",style: TextStyle(color: Colors.black54),),
           ),
           ListTile(
-            leading: Icon(Icons.inbox,color: Colors.black54,),
+            leading: Icon(Icons.pages,color: Colors.black54,),
             title: Text("Draftfs",style: TextStyle(color: Colors.black54),),
           ),
           ListTile(
-            leading: Icon(Icons.inbox,color: Colors.black54,),
+            leading: Icon(Icons.collections,color: Colors.black54,),
             title: Text("All Mail",style: TextStyle(color: Colors.black54),),
           ),
           ListTile(
