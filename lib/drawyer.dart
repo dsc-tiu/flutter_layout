@@ -26,15 +26,11 @@ class Account extends StatelessWidget {
             title: Text("Promotion",style: TextStyle(color: Colors.black54),),
           ),
           ListTile(
-            leading: Icon(Icons.inbox,color: Colors.black54,),
-            title: Text("All Inboxes",style: TextStyle(color: Colors.black54),),
-          ),
-          ListTile(
-            leading: Icon(Icons.inbox,color: Colors.black54,),
+            leading: Icon(Icons.notification_important,color: Colors.black54,),
             title: Text("Updates",style: TextStyle(color: Colors.black54),),
           ),
           ListTile(
-            leading: Icon(Icons.inbox,color: Colors.black54,),
+            leading: Icon(Icons.chat_bubble_outline,color: Colors.black54,),
             title: Text("Forum",style: TextStyle(color: Colors.black54),),
           ),
           Divider(height:20.0),
