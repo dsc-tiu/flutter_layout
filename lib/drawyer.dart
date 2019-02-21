@@ -3,178 +3,40 @@ import 'package:flutter/material.dart';
 class Account extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return CustomScrollView(
-      slivers: <Widget>[
-        SliverFixedExtentList(
-          itemExtent: 500.0,
-          delegate: SliverChildListDelegate([
-            Container(
-                child: ListView(
-              children: <Widget>[
-                UserAccountsDrawerHeader(
-                  accountName: Text("DSC TIU"),
-                  accountEmail: Text("dsctechnoindiauniversity@gmail.com"),
-                  currentAccountPicture: CircleAvatar(
-                    child: Text("D",
-                        style: TextStyle(
-                          fontSize: 30.0,
-                        )),
-                    backgroundColor: Colors.red,
-                  ),
-                ),
-                Container(
-                  padding: EdgeInsets.all(20.0),
-                  child: Row(
-                    children: <Widget>[
-                      CircleAvatar(
-                          backgroundColor: Colors.red,
-                          child: Icon(
-                            Icons.mail,
-                            color: Colors.white,
-                          )),
-                      Container(
-                        padding: EdgeInsets.only(left: 20.0),
-                        child: Text("Primary",
-                            style: TextStyle(
-                                color: Colors.black,
-                                fontSize: 15.0,
-                                fontWeight: FontWeight.bold)),
-                      )
-                    ],
-                  ),
-                ),
-                Container(
-                  padding: EdgeInsets.all(20.0),
-                  child: Row(
-                    children: <Widget>[
-                      CircleAvatar(
-                          backgroundColor: Colors.red,
-                          child: Icon(
-                            Icons.mail,
-                            color: Colors.white,
-                          )),
-                      Container(
-                        padding: EdgeInsets.only(left: 20.0),
-                        child: Text("Social",
-                            style: TextStyle(
-                                color: Colors.black,
-                                fontSize: 15.0,
-                                fontWeight: FontWeight.bold)),
-                      )
-                    ],
-                  ),
-                ),
-                Container(
-                  padding: EdgeInsets.all(20.0),
-                  child: Row(
-                    children: <Widget>[
-                      CircleAvatar(
-                          backgroundColor: Colors.red,
-                          child: Icon(
-                            Icons.mail,
-                            color: Colors.white,
-                          )),
-                      Container(
-                        padding: EdgeInsets.only(left: 20.0),
-                        child: Text("Update",
-                            style: TextStyle(
-                                color: Colors.black,
-                                fontSize: 15.0,
-                                fontWeight: FontWeight.bold)),
-                      )
-                    ],
-                  ),
-                ),
-                Container(
-                  padding: EdgeInsets.all(20.0),
-                  child: Row(
-                    children: <Widget>[
-                      CircleAvatar(
-                          backgroundColor: Colors.red,
-                          child: Icon(
-                            Icons.mail,
-                            color: Colors.white,
-                          )),
-                      Container(
-                        padding: EdgeInsets.only(left: 20.0),
-                        child: Text("Forum",
-                            style: TextStyle(
-                                color: Colors.black,
-                                fontSize: 15.0,
-                                fontWeight: FontWeight.bold)),
-                      )
-                    ],
-                  ),
-                )
-              ],
-            )),
-          ]),
+    return ListView(
+      children: <Widget>[
+        Divider(),
+        Text("  Gmail",style: TextStyle(color: Colors.red,fontSize: 25.0),),
+        Divider(height: 20.0,),
+        ListTile(
+          leading: Icon(Icons.inbox,color: Colors.black54,),
+          title: Text("All Inboxes",style: TextStyle(color: Colors.black54),),
         ),
-        // Divider(),
-        SliverFixedExtentList(
-          itemExtent: 200.0,
-          delegate: SliverChildListDelegate([
-            Container(
-              child: ListView(
-                children: <Widget>[
-                  Text(
-                    "People Online",
-                    style: TextStyle(
-                        fontWeight: FontWeight.bold,
-                        color: Colors.green,
-                        fontSize: 15.0),
-                    textAlign: TextAlign.center,
-                  ),
-                  Divider(),
-                  Container(
-                    padding: EdgeInsets.only(left: 20.0),
-                    child: Row(
-                      children: <Widget>[
-                        CircleAvatar(
-                          child: Text("D"),
-                        ),
-                        Container(
-                          padding: EdgeInsets.only(left: 20.0),
-                          child: Text("data"),
-                        )
-                      ],
-                    ),
-                  ),
-                  Divider(),
-                  Container(
-                    padding: EdgeInsets.only(left: 20.0),
-                    child: Row(
-                      children: <Widget>[
-                        CircleAvatar(
-                          child: Text("D"),
-                        ),
-                        Container(
-                          padding: EdgeInsets.only(left: 20.0),
-                          child: Text("data"),
-                        )
-                      ],
-                    ),
-                  ),
-                  Divider(),
-                  Container(
-                    padding: EdgeInsets.only(left: 20.0),
-                    child: Row(
-                      children: <Widget>[
-                        CircleAvatar(
-                          child: Text("D"),
-                        ),
-                        Container(
-                          padding: EdgeInsets.only(left: 20.0),
-                          child: Text("data"),
-                        )
-                      ],
-                    ),
-                  ),
-                ],
-              ),
-            )
-          ]),
-        )
+        Divider(),
+         ListTile(
+          leading: Icon(Icons.inbox,color: Colors.black54,),
+          title: Text("Primary",style: TextStyle(color: Colors.black54),),
+        ),
+        ListTile(
+          leading: Icon(Icons.people,color: Colors.black54,),
+          title: Text("Social",style: TextStyle(color: Colors.black54),),
+        ),
+        ListTile(
+          leading: Icon(Icons.inbox,color: Colors.black54,),
+          title: Text("Promotion",style: TextStyle(color: Colors.black54),),
+        ),
+        ListTile(
+          leading: Icon(Icons.inbox,color: Colors.black54,),
+          title: Text("All Inboxes",style: TextStyle(color: Colors.black54),),
+        ),
+        ListTile(
+          leading: Icon(Icons.inbox,color: Colors.black54,),
+          title: Text("Updates",style: TextStyle(color: Colors.black54),),
+        ),
+        ListTile(
+          leading: Icon(Icons.inbox,color: Colors.black54,),
+          title: Text("Updates",style: TextStyle(color: Colors.black54),),
+        ),
       ],
     );
   }
