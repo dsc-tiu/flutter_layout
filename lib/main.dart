@@ -17,30 +17,79 @@ class _LayoutAppState extends State<LayoutApp> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Colors.redAccent,
-        title: Text("Layout Learning"),
-        actions: <Widget>[
-          CircleAvatar(
-            child: Icon(Icons.search,size: 25.0,color: Colors.blue,),
-            backgroundColor: Colors.white,
-          ),
-        ],
-      ),
       drawer: Drawer(
         child: Account(),
+      ), 
+      appBar: AppBar(
+        title: Text("Search mail",
+        style: TextStyle(color: Colors.black54),),
+        actions: <Widget>[
+            Container(
+                child: CircleAvatar(
+                  backgroundColor: Colors.white,
+                  child: Icon(
+                    Icons.account_circle,
+                    color: Colors.red,size: 32.0,),
+                ),
+            )
+        ],
+        backgroundColor: Colors.white,
+        iconTheme: IconThemeData(
+          color: Colors.black,
+        ),
       ),
       body: ListView(
         children: <Widget>[
+       /*  Container(
+          margin: EdgeInsets.fromLTRB(40.0, 10.0,10.0, 10.0),
+          height: 40.0,
+          width: 200.0,
+          child: Row(
+            children: <Widget>[
+              Container(
+                width: 30.0,
+                child: GestureDetector(
+                  child: Icon(Icons.menu),
+                  onTap: (){
+                  /*  Drawer(
+                      child: Account(),
+                    ); */
+                  
+                  },
+                ) 
+              ),
+              Container(
+                margin: EdgeInsets.only(left: 20.0),
+                child: Text("Search mail",
+                style: TextStyle(
+                  fontSize: 20.0,
+                  color: Colors.black
+                ),)
+              ),
+              Container(
+                margin: EdgeInsets.only(left: 80.0),
+                child: CircleAvatar(
+                  backgroundColor: Colors.white,
+                  child: Icon(
+                    Icons.account_circle,
+                    color: Colors.red,size: 32.0,),
+                ),
+              )
+            ],
+          ),
+         ), */
+         Divider(height: 20.0,),
          Client(),
          Client(),
          Client(),
         ],
       ),
       floatingActionButton: FloatingActionButton(
-        backgroundColor: Colors.blue,
+        backgroundColor: Colors.white,
         elevation: 540.0,
-        child: Icon(Icons.add,color:Colors.white,size:35.0),
+        highlightElevation: 520.0,
+        isExtended: true,
+        child: Icon(Icons.add,color:Colors.red,size:35.0),
       ),
     );
   }
