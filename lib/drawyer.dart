@@ -31,6 +31,18 @@ class Account extends StatelessWidget {
               leading: Icon(Icons.account_circle,size: 40.0,color: Colors.red,),
               title: Text("Primary"),
             ),
+            ListTile(
+              leading: Icon(Icons.account_circle,size: 40.0,color: Colors.red,),
+              title: Text("Update"),
+            ),
+            ListTile(
+              leading: Icon(Icons.account_circle,size: 40.0,color: Colors.red,),
+              title: Text("Promotion"),
+            ),
+            ListTile(
+              leading: Icon(Icons.account_circle,size: 40.0,color: Colors.red,),
+              title: Text("Forum"),
+            ),
           ],
         );
   }
