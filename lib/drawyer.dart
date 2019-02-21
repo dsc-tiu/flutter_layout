@@ -100,12 +100,62 @@ class Account extends StatelessWidget {
             ),
            // Divider(),
             SliverFixedExtentList(
-              itemExtent: 200.0,
+              itemExtent: 140.0,
               delegate: SliverChildListDelegate([
                 Container(
                   child: ListView(
                     children: <Widget>[
-                      Text("data",style: TextStyle(fontWeight: FontWeight.bold),textAlign: TextAlign.center,)
+                      Text("People Online",
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        color: Colors.green,
+                        fontSize: 15.0),
+                        textAlign: TextAlign.center,),
+                      Divider(),
+                         Container(
+              padding: EdgeInsets.only(left: 20.0),
+              child: Row(
+              children: <Widget>[
+                CircleAvatar(
+                  child: Text("D"),
+                ),
+                Container(
+                  padding: EdgeInsets.only(left: 20.0),
+                  child: Text("data"),
+                )
+              ],
+            ),
+          ),
+          Divider(),
+             Container(
+              padding: EdgeInsets.only(left: 20.0),
+              child: Row(
+              children: <Widget>[
+                CircleAvatar(
+                  child: Text("D"),
+                ),
+                Container(
+                  padding: EdgeInsets.only(left: 20.0),
+                  child: Text("data"),
+                )
+              ],
+            ),
+          ),
+          Divider(),
+             Container(
+              padding: EdgeInsets.only(left: 20.0),
+              child: Row(
+              children: <Widget>[
+                CircleAvatar(
+                  child: Text("D"),
+                ),
+                Container(
+                  padding: EdgeInsets.only(left: 20.0),
+                  child: Text("data"),
+                )
+              ],
+            ),
+          ),
                     ],
                   ),
                 )
