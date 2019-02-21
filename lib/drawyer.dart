@@ -33,6 +33,10 @@ class Account extends StatelessWidget {
             ),
             ListTile(
               leading: Icon(Icons.account_circle,size: 40.0,color: Colors.red,),
+              title: Text("Social"),
+            ),
+            ListTile(
+              leading: Icon(Icons.account_circle,size: 40.0,color: Colors.red,),
               title: Text("Update"),
             ),
             ListTile(
@@ -43,6 +47,15 @@ class Account extends StatelessWidget {
               leading: Icon(Icons.account_circle,size: 40.0,color: Colors.red,),
               title: Text("Forum"),
             ),
+            ListTile(
+              leading: Icon(Icons.account_circle,size: 40.0,color: Colors.red,),
+              title: Text("Spam"),
+            ),
+            ListTile(
+              leading: Icon(Icons.account_circle,size: 40.0,color: Colors.red,),
+              title: Text("Trash"),
+            ),
+            Divider(height: 50.0,),
           ],
         );
   }
