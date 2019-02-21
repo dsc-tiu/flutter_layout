@@ -6,7 +6,7 @@ class Account extends StatelessWidget {
     return CustomScrollView(
           slivers: <Widget>[
             SliverFixedExtentList(
-              itemExtent: 500.0,
+              itemExtent: 450.0,
               delegate: SliverChildListDelegate([
                 Container(
                   child: ListView(
@@ -100,7 +100,7 @@ class Account extends StatelessWidget {
             ),
            // Divider(),
             SliverFixedExtentList(
-              itemExtent: 140.0,
+              itemExtent: 200.0,
               delegate: SliverChildListDelegate([
                 Container(
                   child: ListView(
