@@ -20,6 +20,12 @@ class _LayoutAppState extends State<LayoutApp> {
       appBar: AppBar(
         backgroundColor: Colors.redAccent,
         title: Text("Layout Learning"),
+        actions: <Widget>[
+          CircleAvatar(
+            child: Icon(Icons.search,size: 25.0,color: Colors.blue,),
+            backgroundColor: Colors.white,
+          ),
+        ],
       ),
       drawer: Drawer(
         child: Account(),
@@ -30,6 +36,11 @@ class _LayoutAppState extends State<LayoutApp> {
          Client(),
          Client(),
         ],
+      ),
+      floatingActionButton: FloatingActionButton(
+        backgroundColor: Colors.blue,
+        elevation: 540.0,
+        child: Icon(Icons.add,color:Colors.white,size:35.0),
       ),
     );
   }
