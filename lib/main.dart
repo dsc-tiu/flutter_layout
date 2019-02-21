@@ -115,14 +115,32 @@ class Client extends StatelessWidget {
               Container(
                 padding: EdgeInsets.fromLTRB(20.0, 20.0,20.0,20.0),
                 height: 100.0,
-                width: 200.0,
+                width: 250.0,
                 child: ListView(
                   children: <Widget>[
-                    Text("client name Title",style: TextStyle(fontSize: 20.0,fontWeight: FontWeight.bold),),
-                    Text("client email Id",style: TextStyle(fontSize: 20.0,fontWeight: FontWeight.bold),)
+                    Text("Codemagic.io",style: TextStyle(fontSize: 20.0,fontWeight: FontWeight.bold),),
+                    Text("Here is your artificats....",style: TextStyle(fontSize: 20.0,fontWeight: FontWeight.bold),)
                   ],
                 ),
-              )
+              ),
+              Container(
+                height: 100.0,
+                width: 50.0,
+                alignment: Alignment.bottomRight,
+                margin: EdgeInsets.only(right: 0.0),
+                child: ListView(
+                children: <Widget>[
+                  Text("Feb 22",textAlign: TextAlign.end,),
+                  Container(
+                    height: 70.0,
+                    width: 100.0,
+                    alignment: Alignment.bottomRight,
+                    child: Icon(
+                      Icons.star_border
+                    ),
+                  )
+                ],
+              ),)
             ],
           ),
         );
