@@ -58,15 +58,35 @@ class Account extends StatelessWidget {
             Divider(height: 5.0,),
             Text("People Online"),
             Divider(),
-            Row(
+            Container(
+              padding: EdgeInsets.only(left: 20.0),
+              child: Row(
               children: <Widget>[
                 CircleAvatar(
                   child: Text("D"),
                 ),
-                Text("data")
+                Container(
+                  padding: EdgeInsets.only(left: 20.0),
+                  child: Text("data"),
+                )
               ],
-            )
-          ],
-        );
+            ),
+          ),
+          Divider(),
+          Container(
+              padding: EdgeInsets.only(left: 20.0),
+              child: Row(
+              children: <Widget>[
+                CircleAvatar(
+                  child: Text("D"),
+                ),
+                Container(
+                  padding: EdgeInsets.only(left: 20.0),
+                  child: Text("data 2"),
+                )
+              ],
+            ),
+          )
+        ]);
   }
 }
