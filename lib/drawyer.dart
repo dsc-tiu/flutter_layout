@@ -38,9 +38,8 @@ class Account extends StatelessWidget {
           title: Text("Forum",style: TextStyle(color: Colors.black54),),
         ),
         Divider(height:20.0),
-        Text("  Gmail",style: TextStyle(color: Colors.black,fontSize: 20.0),),
+        Text("  ALL LABELS",style: TextStyle(color: Colors.black,fontSize: 20.0),),
         Divider(height: 20.0,),
-        Divider(height:20.0),
         ListTile(
           leading: Icon(Icons.star_border,color: Colors.black54,),
           title: Text("Starred",style: TextStyle(color: Colors.black54),),
@@ -78,6 +77,25 @@ class Account extends StatelessWidget {
           title: Text("Trash",style: TextStyle(color: Colors.black54),),
         ),
         Divider(height: 20.0,),
+        Text("  GOOGLE APPS",style: TextStyle(color: Colors.black,fontSize: 20.0),),
+        Divider(height: 20.0,),
+        ListTile(
+          leading: Icon(Icons.calendar_today,color: Colors.black54,),
+          title: Text("Calendar",style: TextStyle(color: Colors.black54),),
+        ),
+        ListTile(
+          leading: Icon(Icons.account_circle,color: Colors.black54,),
+          title: Text("Contancts",style: TextStyle(color: Colors.black54),),
+        ),
+        Divider(),
+        ListTile(
+          leading: Icon(Icons.settings,color: Colors.black54,),
+          title: Text("Settings",style: TextStyle(color: Colors.black54),),
+        ),
+        ListTile(
+          leading: Icon(Icons.help_outline,color: Colors.black54,),
+          title: Text("Help & Feedback",style: TextStyle(color: Colors.black54),),
+        ),
       ],
     );
   }
