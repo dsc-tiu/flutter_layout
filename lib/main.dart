@@ -21,7 +21,6 @@ class _LayoutAppState extends State<LayoutApp> {
         title: Text("Layout Learning"),
       ),
       drawer: Drawer(
-        //todo
         child: ListView(
           children: <Widget>[
             UserAccountsDrawerHeader(
